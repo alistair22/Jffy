@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CustomerSettingsActivity"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/mtoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimaryDark"
+        android:elevation="4dp"
+        app:title="User Profile"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:titleTextColor="@color/btnSignIn"/>
+
+    <ImageView
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:id="@+id/profileImage"
+        android:src="@mipmap/ic_default_user"
+        android:layout_marginBottom="20sp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:layout_marginLeft="16dp"/>
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:hint="Name"
+        android:textAllCaps="true"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        android:maxLines="1"
+        android:layout_marginBottom="20sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone Number"
+        android:layout_marginLeft="16dp"/>
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:hint="Phone"
+        android:maxLines="1"
+        android:layout_marginBottom="20sp"
+        android:inputType="number"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/confirm"
+        android:background="@drawable/button_1"
+        android:text="Confirm and Update"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"/>
+
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/back"
+        android:text="Back"
+        android:background="@drawable/button_1"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"/>
+
+</LinearLayout>

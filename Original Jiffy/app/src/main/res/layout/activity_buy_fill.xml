@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BuyFill">
+
+    <RelativeLayout
+        android:id="@+id/toolbar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/mtoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/btnSignUp"
+        android:elevation="4dp"
+        app:title="Convenience Store Order"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:titleTextColor="@color/btnSignIn"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_below="@+id/toolbar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Preferred Store"
+                android:textColor="#000000"
+                android:textSize="12dp" />
+
+            <EditText
+                android:id="@+id/store"
+                android:textColorHint="@android:color/darker_gray"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="6dp"
+                android:ems="10"
+                android:hint="e.g Woolies, Shoprite, Checkers ......."
+                android:inputType="textMultiLine" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Number of items"
+                android:textColor="#000000"
+                android:textSize="12dp" />
+
+            <EditText
+                android:id="@+id/NoOfItems"
+                android:textColorHint="@android:color/darker_gray"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:ems="10"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="5dp"
+                android:hint="e.g 1,2,3....."
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:text="List of items"
+                android:textColor="#000000"
+                android:textSize="12dp" />
+
+            <EditText
+                android:id="@+id/Items"
+                android:textColorHint="@android:color/darker_gray"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:ems="10"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="5dp"
+                android:hint="e.g Rice, Kota, T-Shirt ......"
+                android:inputType="textMultiLine" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Destination"
+                android:textColor="#000000"
+                android:textSize="12dp" />
+<!--
+            <EditText
+                android:id="@+id/Destination"
+                android:ems="10"
+                android:textColorHint="@android:color/darker_gray"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="6dp"
+                android:hint="e.g 12 Alphabet Road, Brixton "
+                android:inputType="textMultiLine" />
+-->
+            <fragment
+                android:id="@+id/place_autocomplete_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="6dp"
+                android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
+                />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/scroll"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+    <Button
+        android:id="@+id/proceed"
+        android:layout_width="136dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_1"
+        android:text="Proceed"
+        android:textColor="#000000" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#404146</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#000000</color>
+
+    <color name="btnSignUp">#1a1b1b</color>
+    <color name="btnSignIn">#f9f8f5</color>
+    <color name="white">#f9f8f5</color>
+
+    <color name="overlayBackground">#7f333639</color>
+
+    <color name="rippleEffectColor">#f816a463</color>
+</resources>

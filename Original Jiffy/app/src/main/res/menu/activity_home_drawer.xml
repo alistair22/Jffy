@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_foodOut"
+            android:icon="@drawable/ic_shopping_cart_black_24dp"
+            android:checked="true"
+            android:title="Food Outlet" />
+
+        <item
+            android:id="@+id/nav_conviStore"
+            android:icon="@drawable/ic_shopping_cart_black_24dp"
+            android:checked="true"
+            android:title="Convenience Store" />
+
+        <item
+            android:id="@+id/nav_pickMeUp"
+            android:icon="@drawable/ic_local_taxi_black_24dp"
+            android:checked="true"
+            android:title="Track Order" />
+        <item
+            android:id="@+id/nav_shopHistory"
+            android:icon="@drawable/ic_history_black_24dp"
+            android:title="Delivery History" />
+
+    </group>
+
+    <item android:title="Account">
+        <menu>
+            <item
+                android:id="@+id/nav_editProfile"
+                android:icon="@drawable/ic_account_circle_black_24dp"
+                android:title="Profile" />
+
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_exit_to_app_black_24dp"
+                android:title="Sign Out" />
+
+        </menu>
+    </item>
+</menu>

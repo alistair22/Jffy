@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:textColor="@android:color/black"
+tools:context="com.example.alistair.jiffy.PickMeUp">
+android:orientation="vertical"
+android:background="#FFFFFFFF">
+
+
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:textColor="#000000"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="28dp"
+            android:text="Current location :"
+            />
+
+        <EditText
+            android:ems="10"
+            android:id="@+id/editText"
+            android:inputType="textMultiLine"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="28dp"
+            android:textColorHint="@android:color/darker_gray"
+            android:textColor="@android:color/black"
+            android:hint="e.g Alphabet Rd Brixton"/>
+
+        <TextView
+            android:id="@+id/text2"
+            android:paddingTop="70dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:textColor="#000000"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="28dp"
+            android:text="Destination :"
+            />
+
+        <EditText
+            android:ems="10"
+            android:id="@+id/editText2"
+            android:inputType="textMultiLine"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="28dp"
+            android:hint="e.g Campus square"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/darker_gray" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/button_pickmeup"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="140dp"
+                android:layout_marginTop="120dp"
+                android:layout_marginBottom="45dp"
+                android:background="@drawable/button_1"
+                android:textSize="12dp"
+                android:text="Save"
+                android:textColor="#000000" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+
+
+
+
+</LinearLayout>
